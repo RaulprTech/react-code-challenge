@@ -17,6 +17,7 @@ export default (props) => {
                             <FormControl
                                 placeholder="Luke Skywalker"
                                 onChange={(ev)=>setOwner(ev.target.value)}
+                                value={owner}
                             />
                         </InputGroup>
                     </td>
@@ -26,6 +27,7 @@ export default (props) => {
                             <FormControl
                                 placeholder="0.5"
                                 onChange={(ev)=>setNpri(ev.target.value)}
+                                value={npri}
                             />
                             <InputGroup.Append>
                                 <InputGroup.Text>%</InputGroup.Text>

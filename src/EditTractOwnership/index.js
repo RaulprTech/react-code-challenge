@@ -11,7 +11,7 @@ const EditTractOwnership = ({ value = [], onChange = () => { } }) => {
   const [interest, setInterest] = useState("");
   const [lease, setLease] = useState("");
 
-  const [minerals, setMinerals] = useState(value);
+  const [minerals, setMinerals] = useState([]);
 
   let min = [];
 
@@ -20,7 +20,6 @@ const EditTractOwnership = ({ value = [], onChange = () => { } }) => {
     min.interest = interest;
     min.lease = lease;
     setMinerals(minerals => [...minerals, min]);
-    min = []
   }
 
 
@@ -42,7 +41,8 @@ const EditTractOwnership = ({ value = [], onChange = () => { } }) => {
           <td>
             <FormControl
               placeholder="Luke Skywalker"
-              onChange={onChange = (ev) => setOwner(ev.target.value) }
+              onChange={(ev) => setOwner(ev.target.value) }npm start
+
               //
             />
           </td>
